@@ -5,7 +5,6 @@ import { defineConfig } from 'vite'
 dns.setDefaultResultOrder('verbatim')
 
 export default defineConfig({
-  // omit
   server: {
     port: 8080
   }
