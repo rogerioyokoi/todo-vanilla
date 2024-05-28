@@ -1,35 +1,4 @@
-import javascriptLogo from '../assets/javascript.svg'
-import '../css/style.css'
-import { setupCounter } from './counter.js'
-import viteLogo from '/vite.svg'
+import '../css/style.css';
+import { setupHeader } from './header.js';
 
-document.querySelector('#app').innerHTML = `
-  <div>
-    <a href="https://vitejs.dev" target="_blank">
-      <img src="${viteLogo}" class="logo" alt="Vite logo" />
-    </a>
-    <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript" target="_blank">
-      <img src="${javascriptLogo}" class="logo vanilla" alt="JavaScript logo" />
-    </a>
-    <h1>Hello Vite!</h1>
-    <div class="card">
-      <button id="counter" type="button"></button>
-    </div>
-    <p class="read-the-docs">
-      Click on the Vite logo to learn more
-    </p>
-  </div>
-  <div class="bg-white dark:bg-slate-800 rounded-lg px-6 py-8 ring-1 ring-slate-900/5 shadow-xl">
-  <div>
-    <span class="inline-flex items-center justify-center p-2 bg-indigo-500 rounded-md shadow-lg">
-      <svg class="h-6 w-6 text-white" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true"><!-- ... --></svg>
-    </span>
-  </div>
-  <h3 class="text-slate-900 dark:text-white mt-5 text-base font-medium tracking-tight">Writes Upside-Down</h3>
-  <p class="text-slate-500 dark:text-slate-400 mt-2 text-sm">
-    The Zero Gravity Pen can be used to write in any orientation, including upside-down. It even works in outer space.
-  </p>
-</div>
-`
-
-setupCounter(document.querySelector('#counter'))
+setupHeader(document.querySelector('#app'));

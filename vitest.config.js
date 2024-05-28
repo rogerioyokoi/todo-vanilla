@@ -1,3 +1,5 @@
+import { defineConfig } from 'vitest';
+
 /** @type {import('vitest').UserConfig} */
 export default defineConfig({
   test: {
