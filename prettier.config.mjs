@@ -1,10 +1,8 @@
-// prettier.config.js, .prettierrc.js, prettier.config.mjs, or .prettierrc.mjs
-
-/** @type {import("prettier").Config} */
+/** @type {{singleQuote: boolean, trailingComma: string, tabWidth: number, semi: boolean}} */
 const config = {
-  trailingComma: "es5",
-  tabWidth: 4,
-  semi: false,
+  trailingComma: 'all',
+  tabWidth: 2,
+  semi: true,
   singleQuote: true,
 };
 
